@@ -1,5 +1,13 @@
 void main() {
-  for (var i = 1; i < 5; i++) {
-    print(i);
+  int factorial(int n) {
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+      result *= i;
+    }
+    return result;
   }
+
+  int number = 5;
+  int factorialresult = factorial(number);
+  print(factorialresult);
 }
